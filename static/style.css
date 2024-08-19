@@ -1,0 +1,204 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('images/Background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the image covers the entire viewport */
+
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    background-color: #3a588d;
+    color: white;
+    font-size: 28px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.header {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 70px; /* Adjust as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.title-container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-title {
+    font-size: 32px;
+    font-family: fantasy;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+    font-weight: lighter;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1000px;
+    height: calc(100vh - 150px); /* Adjust height to account for header and footer */
+    background: rgba(255, 255, 255, 0.6); /* More translucent white background */
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4)); /* Gradient for a subtle effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for a floating effect */
+    border-radius: 15px;
+    overflow: auto; /* Make the container scrollable */
+    margin-top: 120px; /* Ensure content is below the fixed header */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.form-container, .result-container {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    overflow: auto;
+}
+
+.form-container {
+    background-color: #fafafa;
+    animation: slideInLeft 0.5s ease-out;
+}
+
+.result-container {
+    background-color: #e3f2fd;
+    animation: slideInRight 0.5s ease-out;
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 13px;
+    color: #343;
+    text-align: center;
+    font-weight: bold;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-file-upload:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.preview {
+    margin: 20px 0;
+    display: none;
+    transition: opacity 1s ease;
+    text-align: center;
+}
+
+.preview img {
+    max-width: 80%;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.prediction-panel, .recommendation-panel {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: opacity 2s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.prediction-panel {
+    background-color: #47ca8d;
+    color: #000000;
+    border: 1px solid #f5c6cb;
+}
+
+.recommendation-panel {
+    background-color: #d4edda;
+    color: #000000;
+    border: 1px solid #c3e6cb;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-90%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(90%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #3a588d;
+    color: white;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+}
