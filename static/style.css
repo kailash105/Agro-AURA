@@ -9,11 +9,11 @@ body {
     overflow: hidden;
     background-image: url('images/Background.jpg');
     background-repeat: no-repeat;
-    background-size: cover; /* Ensure the image covers the entire viewport */
+    background-size: cover; 
 
 }
 
-/* Header styles */
+
 header {
     width: 100%;
     display: flex;
@@ -31,32 +31,31 @@ header {
 
 .title-container {
     display: flex;
-    align-items: center; /* Align items vertically centered */
-    gap: 20px; /* Space between logo and text */
+    align-items: center;
+    gap: 20px; 
 }
 
 .logo {
-    height: 60px; /* Adjust height as needed */
-    width: auto; /* Maintain aspect ratio */
+    height: 60px; 
+    width: auto; 
 }
 
-/* Main title styles */
+
 .main-title {
-    font-size: 32px; /* Font size for the main title */
+    font-size: 32px; 
     font-family: fantasy;
     font-weight: bold;
-    color: #4CAF50; /* Color for main title */
-    margin: 0; /* Remove default margin */
+    color: #4CAF50; 
+    margin: 0; 
 }
 
-/* Subtitle styles */
 .subtitle {
-    font-size: 18px; /* Font size for the subtitle */
-    color: #ddd; /* Color for subtitle */
-    margin: 0; /* Remove default margin */
+    font-size: 18px; 
+    color: #ddd; 
+    margin: 0; 
 }
 
-/* Navigation styles */
+
 .nav ul {
     list-style-type: none;
     margin: 0;
@@ -76,7 +75,7 @@ header {
     padding: 8px 16px;
     border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
-    --hover: #55cc00; /* Define the hover color for links */
+    --hover: #55cc00; 
 }
 
 .nav ul li a:hover,
