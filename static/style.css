@@ -7,9 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
-    background-image: url('images/Background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover; 
+ 
 
 }
 
@@ -92,10 +90,10 @@ header {
     flex-direction: column;
     width: 90%;
     max-width: 1000px;
-    height: calc(100vh - 150px); /* Adjust height to account for header and footer */
-    background: rgba(255, 255, 255, 0.6); /* More translucent white background */
-    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4)); /* Gradient for a subtle effect */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for a floating effect */
+    height: calc(100vh - 130px); /* Adjust height to account for header and footer */
+    background: rgb(248 248 248 / 0%); /* More translucent white background */
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgb(129 32 32 / 40%)); /* Gradient for a subtle effect */
+    box-shadow: 0 4px 15px rgb(30 64 208); /* Enhanced shadow for a floating effect */
     border-radius: 15px;
     overflow: auto; /* Make the container scrollable */
     margin-top: 120px; /* Ensure content is below the fixed header */
@@ -109,24 +107,24 @@ header {
     box-sizing: border-box;
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 10px rgb(97, 91, 91);
     overflow: auto;
 }
-
+ 
 .form-container {
-    background-color: #fafafa;
+    background-color: #a46161;
     animation: slideInLeft 0.5s ease-out;
 }
 
 .result-container {
-    background-color: #e3f2fd;
+    background-color: #526878;
     animation: slideInRight 0.5s ease-out;
 }
 
 h1 {
     font-size: 22px;
     margin-bottom: 13px;
-    color: #343;
+    color: rgb(0, 0, 0);
     text-align: center;
     font-weight: bold;
 }
@@ -154,8 +152,8 @@ input[type="file"] {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 button {
-    background-color: #28a745;
-    color: white;
+    background-color: #a82111;
+    color: #000000;
     padding: 12px 25px;
     border: none;
     border-radius: 5px;
@@ -166,9 +164,9 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #867b7b;
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgb(255 240 240);
 }
 
 
@@ -182,8 +180,8 @@ button:hover {
 .preview img {
     max-width: 80%;
     border-radius: 8px;
-    border: 2px solid #ddd;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ca2d2d;
+    box-shadow: 0 0 15px rgb(205 31 31);
 }
 
 .prediction-panel, .recommendation-panel {
@@ -191,7 +189,7 @@ button:hover {
     padding: 20px;
     border-radius: 10px;
     transition: opacity 2s ease;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 10px rgb(168 168 168 / 5%);
 }
 
 .prediction-panel {
@@ -201,7 +199,7 @@ button:hover {
 }
 
 .recommendation-panel {
-    background-color: #d4edda;
+    background-color: #9dddac;
     color: #000000;
     border: 1px solid #c3e6cb;
 }
