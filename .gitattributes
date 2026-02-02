@@ -1,0 +1,6 @@
+WheatDiseaseDetection.h5 filter=lfs diff=lfs merge=lfs -text
+*.ipynb linguist-detectable=True
+*.html linguist-detectable=True
+*.css linguist-detectable=True
+*.py linguist-detectable=true
+
